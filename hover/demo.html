@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap: Dropdown on Hover Plugin Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="A demo for my simple plugin that enables Bootstrap dropdowns to activate on hover and provide a nice user experience.">
+  <meta name="author" content="Cameron Spear">
+
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    body { padding-top: 70px; min-height: 410px }
+    .tab-content p { padding: 10px 0; }
+  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="sethistyle">
+    <meta name="keywords" content="furnishing, home furnishing, handicrafts, sethi, style, sethistyle, designer bed cover, designer bed sheet, ">
+    <meta name="author" content="kartik">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sethi's Style</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header >
+  <div class="navbar navbar-fixed-top navbar-inverse bs-docs-nav">
+    <p>
+Welcome visitor. You can login or create an account.
+</p>
+  </div>
+
+  <div class="navbar navbar-inverse bs-docs-nav">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-collapse nav-collapse collapse navbar-header">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">Home</b></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Products Range<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="products.html"><i class="fa fa-home"></i> Home Furnishing</a></li>
+              <li><a href="products.html"><i class="fa fa-female"></i> Women Apperals</a></li>
+              <li><a href="products.html"><i class="fa fa-h-square"></i> Hadicrafts</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Store</b></a>
+          </li>
+          <li>
+            <a href="#">About Us</b></a>
+          </li>
+          <li>
+            <a href="#">Contact Us</b></a>
+          </li>
+
+        </ul>
+      </div> <!-- .nav-collapse -->
+    </div> <!-- .container -->
+  </div> <!-- .navbar -->
+</header>
+  <!-- latest jQuery, Boostrap JS and hover dropdown plugin -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="bootstrap-hover-dropdown.js"></script>
+
+  <script>
+    // very simple to use!
+    $(document).ready(function() {
+      $('.js-activated').dropdownHover().dropdown();
+    });
+  </script>
+
+</body>
+</html>
